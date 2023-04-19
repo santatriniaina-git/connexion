@@ -2,7 +2,7 @@ import React from "react";
 
 function SidebarMenu({ steps, currentStep, setCurrentStep }) {
   return (
-    <div className="w-1/4 bg-[#F9F9F9] h-screen">
+    <div className="w-1/4 bg-[#F9F9F9] h-screen flex flex-col justify-center">
       <ul className="flex flex-col justify-start items-center py-4">
         {steps.map((step, index) => (
           <li
