@@ -26,7 +26,7 @@ const Form = () => {
       name: "Étape 4",
       component: <Step4 nextStep={nextStep} />,
     },
-    { name: "Étape 5", component: <Step5 /> },
+    { name: "", component: <Step5 /> },
   ];
 
   const renderStep = () => {
@@ -42,7 +42,7 @@ const Form = () => {
               key={step.name}
               className={`w-full flex justify-center items-center mb-4 py-2 rounded-lg font-medium text-gray-600 hover:bg-gray-300 cursor-pointer transition duration-200 ${
                 index + 1 === currentStep && "bg-blue-500 text-white"
-              }`}
+              } ${step.name === "" ? "hidden" : ""}`}
               onClick={() => setCurrentStep(index + 1)}
             >
               {step.name}
