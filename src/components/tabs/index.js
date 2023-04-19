@@ -12,25 +12,21 @@ const Form = () => {
     setCurrentStep(currentStep + 1);
   };
 
-  const prevStep = () => {
-    setCurrentStep(currentStep - 1);
-  };
-
   const steps = [
     { name: "Étape 1", component: <Step1 nextStep={nextStep} /> },
     {
       name: "Étape 2",
-      component: <Step2 nextStep={nextStep} prevStep={prevStep} />,
+      component: <Step2 nextStep={nextStep} />,
     },
     {
       name: "Étape 3",
-      component: <Step3 nextStep={nextStep} prevStep={prevStep} />,
+      component: <Step3 nextStep={nextStep}/>,
     },
     {
       name: "Étape 4",
-      component: <Step4 nextStep={nextStep} prevStep={prevStep} />,
+      component: <Step4 nextStep={nextStep} />,
     },
-    { name: "Étape 5", component: <Step5 prevStep={prevStep} /> },
+    { name: "Étape 5", component: <Step5 /> },
   ];
 
   const renderStep = () => {
