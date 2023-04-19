@@ -14,10 +14,10 @@ function Form() {
     };
 
     const steps = [
-        { name: "Étape 1", component: Step1 },
-        { name: "Étape 2", component: Step2 },
-        { name: "Étape 3", component: Step3 },
-        { name: "Étape 4", component: Step4 },
+        { name: "Notre fonctionnement", component: Step1 },
+        { name: "Création du profile d'entreprise", component: Step2 },
+        { name: "Création du premier administrateur", component: Step3 },
+        { name: "Vos besoins", component: Step4 },
         { name: "", component: Step5 },
     ];
 

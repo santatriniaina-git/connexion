@@ -9,7 +9,7 @@ function SidebarMenu({ steps, currentStep, setCurrentStep }) {
             key={step.name}
             className={`w-full flex justify-center items-center mb-4 py-2 rounded-lg font-medium cursor-pointer transition duration-200 
               ${index + 1 === currentStep || index + 1 < currentStep ? "text-black" : "text-[#B0BEC5]"}
-              ${step.name === "" && "hidden"}
+              ${step.name === "" && "hidden"} uppercase
             `}
             onClick={() => setCurrentStep(index + 1)}
           >
