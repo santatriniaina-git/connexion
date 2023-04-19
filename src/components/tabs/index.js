@@ -6,7 +6,7 @@ import Step4 from "./Step4";
 import Step5 from "./Step5";
 import SidebarMenu from "../SidebarMenu";
 
-function Form () {
+function Form() {
     const [currentStep, setCurrentStep] = useState(1);
 
     const nextStep = () => {
@@ -14,24 +14,16 @@ function Form () {
     };
 
     const steps = [
-        { name: "Étape 1", component: <Step1 nextStep={nextStep} /> },
-        {
-            name: "Étape 2",
-            component: <Step2 nextStep={nextStep} />,
-        },
-        {
-            name: "Étape 3",
-            component: <Step3 nextStep={nextStep} />,
-        },
-        {
-            name: "Étape 4",
-            component: <Step4 nextStep={nextStep} />,
-        },
-        { name: "", component: <Step5 /> },
+        { name: "Étape 1", component: Step1 },
+        { name: "Étape 2", component: Step2 },
+        { name: "Étape 3", component: Step3 },
+        { name: "Étape 4", component: Step4 },
+        { name: "", component: Step5 },
     ];
 
     const renderStep = () => {
-        return steps[currentStep - 1].component;
+        const StepComponent = steps[currentStep - 1].component;
+        return <StepComponent nextStep={nextStep} />;
     };
 
     return (
