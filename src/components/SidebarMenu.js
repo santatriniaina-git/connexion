@@ -17,7 +17,7 @@ function SidebarMenu({ steps, currentStep, setCurrentStep }) {
           return (
             <li
               key={step.name}
-              className={`w-full flex justify-start items-center mb-4 py-2 rounded-lg font-medium cursor-pointer transition duration-200
+              className={`w-full flex space-x-4 items-center mb-4 py-2 rounded-lg font-medium cursor-pointer transition duration-200
                 ${isSelectedOrPastClass} ${isHiddenStep ? "hidden" : ""} uppercase pl-14
               `}
               onClick={() => setCurrentStep(index + 1)}
