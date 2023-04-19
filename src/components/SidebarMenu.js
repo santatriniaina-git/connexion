@@ -1,7 +1,7 @@
 import React from "react";
 
-function SidebarMenu ({ steps, currentStep, setCurrentStep }) {
-  const renderSidebarMenu = () => (
+function SidebarMenu({ steps, currentStep, setCurrentStep }) {
+  return (
     <div className="w-1/4 bg-[#F9F9F9] h-screen">
       <ul className="flex flex-col justify-start items-center py-4">
         {steps.map((step, index) => (
@@ -19,8 +19,6 @@ function SidebarMenu ({ steps, currentStep, setCurrentStep }) {
       </ul>
     </div>
   );
-
-  return renderSidebarMenu();
-};
+}
 
 export default SidebarMenu;
