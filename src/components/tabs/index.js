@@ -35,7 +35,7 @@ function Form () {
     };
 
     return (
-        <div className="flex flex-row max-w-7xl mx-auto">
+        <div className="flex flex-row mx-auto">
             <SidebarMenu
                 steps={steps}
                 currentStep={currentStep}
