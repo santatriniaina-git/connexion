@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonConnexion from '../ButtonConnexion';
 
 function Step1({ nextStep }) {
     const handleSubmit = (event) => {
@@ -10,9 +11,7 @@ function Step1({ nextStep }) {
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Step1</label>
         <input type="text" id="name" name="name" className="block w-full mt-2" required />
-        <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-4">
-          Next
-        </button>
+        <ButtonConnexion/>
       </form>
     );
   }
