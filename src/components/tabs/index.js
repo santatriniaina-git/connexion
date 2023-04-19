@@ -41,7 +41,7 @@ function Form () {
                 currentStep={currentStep}
                 setCurrentStep={setCurrentStep}
             />
-            <div className="w-3/4 py-8 px-12">{renderStep()}</div>
+            <div className="w-3/4 py-8 px-12 bg-[#fff]">{renderStep()}</div>
         </div>
     );
 };
