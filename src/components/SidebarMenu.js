@@ -8,7 +8,7 @@ function SidebarMenu({ steps, currentStep, setCurrentStep }) {
           const isSelectedStep = index + 1 === currentStep;
           const isPastStep = index + 1 < currentStep;
           const isHiddenStep = step.name === "";
-          const isPreviousStepNameValid = Boolean(steps[index - 1]?.name) && index !== 0;
+          const isPreviousStepNameValid = steps[index - 1]?.name && index !== 0;
           const isSelectedOrPastClass = isSelectedStep || isPastStep ? "text-black" : "text-[#B0BEC5]";
           const selectedOrPastIcon = isSelectedStep || isPastStep ? "X" : "Y";
           const stepIcon = isPreviousStepNameValid
