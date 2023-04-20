@@ -10,7 +10,7 @@ function SidebarMenu({ steps, currentStep }) {
   };
 
   return (
-    <div className="w-1/4 bg-[#F9F9F9] h-screen flex flex-col justify-center">
+    <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-1/4 flex flex-col justify-center z-0">
       <ul className="flex flex-col justify-start items-center py-4">
         {steps.map((step, index) => {
           const isSelectedStep = index + 1 === currentStep;
