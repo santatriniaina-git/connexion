@@ -10,7 +10,7 @@ function Step2({ nextStep }) {
   return (
     <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
       <div>
-        <label htmlFor="field1">Field 1</label>
+        <label htmlFor="field1">Nom commercial *</label>
         <input
           type="text"
           id="field1"
@@ -20,7 +20,7 @@ function Step2({ nextStep }) {
         />
       </div>
       <div>
-        <label htmlFor="field2">Field 2</label>
+        <label htmlFor="field2">Industrie *</label>
         <input
           type="text"
           id="field2"
@@ -30,7 +30,7 @@ function Step2({ nextStep }) {
         />
       </div>
       <div>
-        <label htmlFor="field3">Field 3</label>
+        <label htmlFor="field3">Courriel général de l'entreprise *</label>
         <input
           type="text"
           id="field3"
@@ -40,7 +40,7 @@ function Step2({ nextStep }) {
         />
       </div>
       <div>
-        <label htmlFor="field4">Field 4</label>
+        <label htmlFor="field4">Téléphone de l'entreprise *</label>
         <input
           type="text"
           id="field4"
@@ -50,7 +50,7 @@ function Step2({ nextStep }) {
         />
       </div>
       <div>
-        <label htmlFor="field5">Field 5</label>
+        <label htmlFor="field5">Adresse *</label>
         <input
           type="text"
           id="field5"
@@ -60,7 +60,7 @@ function Step2({ nextStep }) {
         />
       </div>
       <div>
-        <label htmlFor="field6">Field 6</label>
+        <label htmlFor="field6">Adresse Complémentaire </label>
         <input
           type="text"
           id="field6"
@@ -70,7 +70,7 @@ function Step2({ nextStep }) {
         />
       </div>
       <div>
-        <label htmlFor="field7">Field 7</label>
+        <label htmlFor="field7">Fuseau horaire *</label>
         <input
           type="text"
           id="field7"
@@ -80,7 +80,7 @@ function Step2({ nextStep }) {
         />
       </div>
       <div>
-        <label htmlFor="field8">Field 8</label>
+        <label htmlFor="field8">Nombres d'employés</label>
         <input
           type="text"
           id="field8"
