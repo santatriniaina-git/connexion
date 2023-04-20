@@ -16,7 +16,7 @@ function Step1({ nextStep }) {
         </form>
       </div>
       <div className="w-1/2">
-        <img src="" alt="image description" />
+        <img src="" alt="description" />
       </div>
     </div>
   );
