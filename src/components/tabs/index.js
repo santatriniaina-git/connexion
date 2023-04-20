@@ -28,11 +28,7 @@ function Form() {
 
     return (
         <div className="flex flex-row mx-auto">
-            <SidebarMenu
-                steps={steps}
-                currentStep={currentStep}
-                setCurrentStep={setCurrentStep}
-            />
+            <SidebarMenu steps={steps} currentStep={currentStep} />
             <div className="w-3/4 py-8 px-12 bg-[#fff]">{renderStep()}</div>
         </div>
     );
