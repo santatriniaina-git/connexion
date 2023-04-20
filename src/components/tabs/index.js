@@ -29,7 +29,7 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className="relative">
       <Header />
       <div className="flex flex-row mx-auto">
         <div className="w-1/4 bg-[#F9F9F9] h-screen">
@@ -40,6 +40,6 @@ function Form() {
       <Footer />
     </div>
   );
-};
+}
 
 export default Form;
