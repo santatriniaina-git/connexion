@@ -10,8 +10,7 @@ function Step4({ nextStep }) {
     return (
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Step4</label>
-        <input type="text" id="name" name="name" className="block w-full mt-2" required />
-        <ButtonConnexion/>
+        <ButtonConnexion width="w-[441px]"/>
       </form>
     );
   }
