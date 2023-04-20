@@ -9,8 +9,6 @@ function Step1({ nextStep }) {
   
     return (
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Step1</label>
-        <input type="text" id="name" name="name" className="block w-full mt-2" required />
         <ButtonConnexion/>
       </form>
     );
