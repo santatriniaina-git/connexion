@@ -16,10 +16,10 @@ function Form() {
   };
 
   const steps = [
-    { name: "Our Process", component: StepOurProcess },
-    { name: "Create Company Profile", component: StepCreateCompanyProfile },
-    { name: "Create First Admin", component: StepCreateFirstAdmin },
-    { name: "Your Needs", component: StepYourNeeds },
+    { name: "Notre fonctionnement", component: StepOurProcess },
+    { name: "Création du profile d'entreprise", component: StepCreateCompanyProfile },
+    { name: "Création du premier administrateur", component: StepCreateFirstAdmin },
+    { name: "Vos besoins", component: StepYourNeeds },
     { name: "", component: StepConfirmation },
   ];
 
