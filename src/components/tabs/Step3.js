@@ -80,7 +80,7 @@ function Step3({ nextStep }) {
         />
       </div>
       <div className="col-span-2">
-      <ButtonConnexion width="200px" />
+      <ButtonConnexion width="w-[441px]" />
       </div>
     </form>
   );
