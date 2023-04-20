@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Step1 from "./Step1";
-import Step2 from "./Step2";
-import Step3 from "./Step3";
-import Step4 from "./Step4";
-import Step5 from "./Step5";
+import StepOurProcess from "./Step1";
+import StepCreateCompanyProfile from "./Step2";
+import StepCreateFirstAdmin from "./Step3";
+import StepYourNeeds from "./Step4";
+import StepConfirmation from "./Step5";
 import SidebarMenu from "../SidebarMenu";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -16,11 +16,11 @@ function Form() {
   };
 
   const steps = [
-    { name: "Notre fonctionnement", component: Step1 },
-    { name: "Création du profile d'entreprise", component: Step2 },
-    { name: "Création du premier administrateur", component: Step3 },
-    { name: "Vos besoins", component: Step4 },
-    { name: "", component: Step5 },
+    { name: "Our Process", component: StepOurProcess },
+    { name: "Create Company Profile", component: StepCreateCompanyProfile },
+    { name: "Create First Admin", component: StepCreateFirstAdmin },
+    { name: "Your Needs", component: StepYourNeeds },
+    { name: "", component: StepConfirmation },
   ];
 
   const renderStep = () => {
