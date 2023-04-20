@@ -35,7 +35,7 @@ function Form() {
         <div className="w-1/4 bg-[#F9F9F9] h-screen">
           <SidebarMenu steps={steps} currentStep={currentStep} />
         </div>
-        <div className="w-3/4 py-8 px-12 bg-[#fff]">{renderStep()}</div>
+        <div className="w-3/4 py-8 flex items-center justify-center bg-[#fff]">{renderStep()}</div>
       </div>
       <Footer />
     </div>
