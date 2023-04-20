@@ -5,6 +5,8 @@ import Step3 from "./Step3";
 import Step4 from "./Step4";
 import Step5 from "./Step5";
 import SidebarMenu from "../SidebarMenu";
+import Header from "../Header";
+import Footer from "../Footer";
 
 function Form() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -27,11 +29,15 @@ function Form() {
   };
 
   return (
-    <div className="flex flex-row mx-auto">
-      <div className="w-1/4 bg-[#F9F9F9] h-screen">
-        <SidebarMenu steps={steps} currentStep={currentStep} />
+    <div>
+      <Header />
+      <div className="flex flex-row mx-auto">
+        <div className="w-1/4 bg-[#F9F9F9] h-screen">
+          <SidebarMenu steps={steps} currentStep={currentStep} />
+        </div>
+        <div className="w-3/4 py-8 px-12 bg-[#fff]">{renderStep()}</div>
       </div>
-      <div className="w-3/4 py-8 px-12 bg-[#fff]">{renderStep()}</div>
+      <Footer />
     </div>
   );
 };
