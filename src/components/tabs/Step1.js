@@ -32,12 +32,13 @@ function Step1({ nextStep }) {
           <ul className="list-disc pl-6">
             {productFeatures.map((item, index) => (
               <li className="mb-2 bg-gray-300 flex" key={index}>
-              <svg viewBox="0 0 20 20" className="w-5 h-5 mr-2">
-                <circle cx="10" cy="10" r="9" fill="none" strokeWidth="2" />
-                <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 10l3 3 6-6" fill="black"/>
-              </svg>
-              {item}
-            </li>
+                <svg viewBox="0 0 20 20" class="w-5 h-5 mr-2">
+                  <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width="2" />
+                  <path d="M6 10l3 3 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                {item}
+              </li>
             ))}
           </ul>
         </div>
@@ -46,12 +47,13 @@ function Step1({ nextStep }) {
           <ul className="list-disc pl-6">
             {qualityFeatures.map((item, index) => (
               <li className="mb-2 bg-gray-300 flex" key={index}>
-              <svg viewBox="0 0 20 20" className="w-5 h-5 mr-2">
-                <circle cx="10" cy="10" r="9" fill="none" strokeWidth="2" />
-                <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 10l3 3 6-6" fill="black"/>
-              </svg>
-              {item}
-            </li>
+                <svg viewBox="0 0 20 20" class="w-5 h-5 mr-2">
+                  <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width="2" />
+                  <path d="M6 10l3 3 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                {item}
+              </li>
             ))}
           </ul>
         </div>
