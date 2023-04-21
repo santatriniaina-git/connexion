@@ -31,7 +31,7 @@ function Step1({ nextStep }) {
           <h2 className="text-2xl font-bold mb-4 uppercase">Avant de créer un compte, quelques petites précisions sur Altee</h2>
           <ul className="list-disc pl-6">
             {productFeatures.map((item, index) => (
-              <li className="mb-2" key={index}>{item}</li>
+              <li className="mb-2 bg-gray-300" key={index}>{item}</li>
             ))}
           </ul>
         </div>
@@ -39,7 +39,7 @@ function Step1({ nextStep }) {
           <h2 className="text-2xl font-bold mb-4 uppercase">Nous nous distinguons principalement par la qualité du produit</h2>
           <ul className="list-disc pl-6">
             {qualityFeatures.map((item, index) => (
-              <li className="mb-2" key={index}>{item}</li>
+              <li className="mb-2 bg-gray-300" key={index}>{item}</li>
             ))}
           </ul>
         </div>
