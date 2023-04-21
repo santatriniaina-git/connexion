@@ -2,23 +2,23 @@ import React from 'react';
 import ButtonConnexion from '../ButtonConnexion';
 import image from '../../assets/images.PNG';
 
+const productFeatures = [
+  'Nous proposons une large gamme de produits pour répondre à tous vos besoins.',
+  'Nos produits sont fabriqués avec des matériaux de qualité supérieure.',
+  'Nous nous engageons à fournir un service client exceptionnel à tous nos clients.',
+  'Nous sommes fiers d\'offrir des prix compétitifs sur tous nos produits.',
+  'Notre équipe expérimentée est là pour vous aider à chaque étape du processus.'
+];
+
+const qualityFeatures = [
+  'Nous effectuons des tests rigoureux sur tous nos produits pour garantir leur qualité.',
+  'Nous utilisons des matériaux de qualité supérieure pour fabriquer tous nos produits.',
+  'Nous sommes fiers d\'offrir une garantie de qualité sur tous nos produits.',
+  'Nous nous engageons à fournir des produits qui répondent aux normes les plus élevées de qualité.',
+  'Nous sommes constamment à la recherche de moyens d\'améliorer la qualité de nos produits.'
+];
+
 function Step1({ nextStep }) {
-  const productFeatures = [
-    'Nous proposons une large gamme de produits pour répondre à tous vos besoins.',
-    'Nos produits sont fabriqués avec des matériaux de qualité supérieure.',
-    'Nous nous engageons à fournir un service client exceptionnel à tous nos clients.',
-    'Nous sommes fiers d\'offrir des prix compétitifs sur tous nos produits.',
-    'Notre équipe expérimentée est là pour vous aider à chaque étape du processus.'
-  ];
-
-  const qualityFeatures = [
-    'Nous effectuons des tests rigoureux sur tous nos produits pour garantir leur qualité.',
-    'Nous utilisons des matériaux de qualité supérieure pour fabriquer tous nos produits.',
-    'Nous sommes fiers d\'offrir une garantie de qualité sur tous nos produits.',
-    'Nous nous engageons à fournir des produits qui répondent aux normes les plus élevées de qualité.',
-    'Nous sommes constamment à la recherche de moyens d\'améliorer la qualité de nos produits.'
-  ];
-
   const handleSubmit = (event) => {
     event.preventDefault();
     nextStep();
