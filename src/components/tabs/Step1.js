@@ -11,8 +11,26 @@ function Step1({ nextStep }) {
   return (
     <div className="mx-auto h-screen flex justify-between">
       <div className="w-1/2 px-8 flex flex-col justify-center">
-        <h2 className="text-2xl font-bold mb-4">Titre de la première colonne</h2>
-        <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies mi in eros pharetra, sed aliquam elit volutpat. Nulla facilisi.</p>
+        <div>
+          <h2 className="text-2xl font-bold mb-4">Avant de créer un compte, quelques petites précisions sur Altee</h2>
+          <ul>
+            <li>Nous proposons une large gamme de produits pour répondre à tous vos besoins.</li>
+            <li>Nos produits sont fabriqués avec des matériaux de qualité supérieure.</li>
+            <li>Nous nous engageons à fournir un service client exceptionnel à tous nos clients.</li>
+            <li>Nous sommes fiers d'offrir des prix compétitifs sur tous nos produits.</li>
+            <li>Notre équipe expérimentée est là pour vous aider à chaque étape du processus.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold mb-4">Nous nous distinguons principalement par la qualité du produit</h2>
+          <ul>
+            <li>Nous effectuons des tests rigoureux sur tous nos produits pour garantir leur qualité.</li>
+            <li>Nous utilisons des matériaux de qualité supérieure pour fabriquer tous nos produits.</li>
+            <li>Nous sommes fiers d'offrir une garantie de qualité sur tous nos produits.</li>
+            <li>Nous nous engageons à fournir des produits qui répondent aux normes les plus élevées de qualité.</li>
+            <li>Nous sommes constamment à la recherche de moyens d'améliorer la qualité de nos produits.</li>
+          </ul>
+        </div>
         <form onSubmit={handleSubmit}>
           <ButtonConnexion />
         </form>
