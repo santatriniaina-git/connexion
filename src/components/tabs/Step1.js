@@ -31,7 +31,7 @@ function Step1({ nextStep }) {
           <h2 className="text-2xl font-bold mb-4 uppercase">Avant de créer un compte, quelques petites précisions sur Altee</h2>
           <ul className="list-disc pl-6">
             {productFeatures.map((item, index) => (
-              <li className="mb-2 bg-gray-300 flex" key={index}>
+              <li className="mb-2 bg-gray-300 flex items-center" key={index}>
                 <svg viewBox="0 0 20 20" class="w-5 h-5 mr-2">
                   <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width="2" />
                   <path d="M6 10l3 3 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -46,7 +46,7 @@ function Step1({ nextStep }) {
           <h2 className="text-2xl font-bold mb-4 uppercase">Nous nous distinguons principalement par la qualité du produit</h2>
           <ul className="list-disc pl-6">
             {qualityFeatures.map((item, index) => (
-              <li className="mb-2 bg-gray-300 flex" key={index}>
+              <li className="mb-2 bg-gray-300 flex items-center" key={index}>
                 <svg viewBox="0 0 20 20" class="w-5 h-5 mr-2">
                   <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width="2" />
                   <path d="M6 10l3 3 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
