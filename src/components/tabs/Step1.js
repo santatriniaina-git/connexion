@@ -22,7 +22,7 @@ function FeatureList({ features }) {
   return (
     <ul className="list-disc">
       {features.map((item, index) => (
-        <li className="mb-2 py-2 rounded-md bg-gray-300 flex items-center" key={index}>
+        <li className="mb-2 py-2 pl-4 pr-4 rounded-md bg-gray-300 flex items-center" key={index}>
           <svg viewBox="0 0 20 20" class="w-5 h-5 mr-2">
             <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width="2" />
             <path d="M6 10l3 3 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
