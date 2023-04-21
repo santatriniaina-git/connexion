@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonConnexion from '../ButtonConnexion';
+import image from '../../assets/images.PNG';
 
 function Step1({ nextStep }) {
   const handleSubmit = (event) => {
@@ -16,7 +17,7 @@ function Step1({ nextStep }) {
         </form>
       </div>
       <div className="w-1/2">
-        <img src="" alt="description" />
+        <img src={image} alt="description" />
       </div>
     </div>
   );
