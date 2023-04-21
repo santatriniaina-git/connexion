@@ -10,7 +10,7 @@ function Step1({ nextStep }) {
 
   return (
     <div className="flex justify-between">
-      <div className="w-1/2 mr-4">
+      <div className="w-1/2 mr-8">
         <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies mi in eros pharetra, sed aliquam elit volutpat. Nulla facilisi.</p>
         <form onSubmit={handleSubmit}>
           <ButtonConnexion />
