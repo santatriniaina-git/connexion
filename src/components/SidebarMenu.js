@@ -11,7 +11,7 @@ function SidebarMenu({ steps, currentStep }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-1/4 flex flex-col justify-center z-0">
+    <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-1/4 flex flex-col justify-between z-0">
       <div className="flex items-center justify-start pl-4 py-2">
         <img src={logo} alt="Logo Altee" className="h-8 w-auto" />
       </div>
