@@ -25,7 +25,12 @@ function Form() {
 
   const renderStep = () => {
     const StepComponent = steps[currentStep - 1].component;
-    return <StepComponent nextStep={nextStep} />;
+    return (
+      <div className="py-24">
+        <StepComponent nextStep={nextStep} />
+      </div>
+    );
+    
   };
 
   return (
