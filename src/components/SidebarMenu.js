@@ -38,7 +38,7 @@ function SidebarMenu({ steps, currentStep }) {
           );
         })}
       </ul>
-      <div className="flex items-center justify-end pr-4 py-2">
+      <div className="flex items-center justify-start pl-4 py-2">
         <span className="text-gray-400 text-sm">&copy; 2023 Votre entreprise</span>
       </div>
     </div>
