@@ -41,8 +41,8 @@ function SidebarMenu({ steps, currentStep }) {
         })}
       </ul>
       <div className="flex items-center justify-start pl-8 py-2">
-      <div className=" font-poppins font-normal ">
-          <span>&copy; Altee {currentYear} </span>
+        <div className="font-poppins font-normal">
+          <span className="font-bold text-black">&copy; Altee {currentYear}</span>&nbsp;
           <span>Vous possédez déjà un compte? &nbsp;</span>
           <a href="/se-connecter" className="font-poppins font-normal">Connectez-vous</a>
         </div>
