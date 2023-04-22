@@ -14,7 +14,7 @@ function SidebarMenu({ steps, currentStep }) {
 
   return (
     <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-1/4 flex flex-col justify-between z-0">
-      <div className="flex items-center justify-start pl-8 py-2">
+      <div className="flex items-center justify-start pl-8 py-8">
         <img src={logo} alt="Logo Altee" className="h-12 w-12" />
       </div>
       <ul className="flex flex-col justify-start items-center py-4">
@@ -40,7 +40,7 @@ function SidebarMenu({ steps, currentStep }) {
           );
         })}
       </ul>
-      <div className="flex items-center justify-start pl-8 py-2">
+      <div className="flex items-center justify-start pl-8 py-8">
         <div className="font-poppins font-normal">
           <span className="font-bold text-black">&copy; Altee {currentYear}</span>&nbsp;
           <span>Vous possédez déjà un compte? &nbsp;</span>
