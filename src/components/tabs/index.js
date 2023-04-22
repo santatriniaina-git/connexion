@@ -37,10 +37,10 @@ function Form() {
     <div className="relative">
       <Header />
       <div className="flex flex-row mx-auto">
-        <div className="w-[37.5rem] bg-[#F9F9F9] h-screen">
+        <div className="w-1/4 bg-[#F9F9F9] h-screen">
           <SidebarMenu steps={steps} currentStep={currentStep} />
         </div>
-        <div className="w-[81.375rem] py-8 flex items-center justify-center bg-[#fff]">{renderStep()}</div>
+        <div className="w-3/4 py-8 flex items-center justify-center bg-[#fff]">{renderStep()}</div>
       </div>
       <Footer />
     </div>
