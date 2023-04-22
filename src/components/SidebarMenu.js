@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../assets/logo192.png';
 
 function SidebarMenu({ steps, currentStep }) {
   const getStepIcon = (isSelectedStep, isPastStep) => {
@@ -11,6 +12,9 @@ function SidebarMenu({ steps, currentStep }) {
 
   return (
     <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-1/4 flex flex-col justify-center z-0">
+      <div className="flex items-center justify-start pl-4 py-2">
+        <img src={logo} alt="Logo Altee" className="h-8 w-auto" />
+      </div>
       <ul className="flex flex-col justify-start items-center py-4">
         {steps.map((step, index) => {
           const isSelectedStep = index + 1 === currentStep;
@@ -34,6 +38,9 @@ function SidebarMenu({ steps, currentStep }) {
           );
         })}
       </ul>
+      <div className="flex items-center justify-end pr-4 py-2">
+        <span className="text-gray-400 text-sm">&copy; 2023 Votre entreprise</span>
+      </div>
     </div>
   );
 }
