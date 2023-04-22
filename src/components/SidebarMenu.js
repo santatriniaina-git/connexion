@@ -10,6 +10,8 @@ function SidebarMenu({ steps, currentStep }) {
     }
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-1/4 flex flex-col justify-between z-0">
       <div className="flex items-center justify-start pl-8 py-2">
@@ -39,7 +41,7 @@ function SidebarMenu({ steps, currentStep }) {
         })}
       </ul>
       <div className="flex items-center justify-start pl-8 py-2">
-        <span className="text-gray-400 text-sm">&copy; 2023 Votre entreprise</span>
+        <span className="text-gray-400 text-sm">&copy; {currentYear} Votre entreprise</span>
       </div>
     </div>
   );
