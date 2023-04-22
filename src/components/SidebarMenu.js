@@ -41,7 +41,7 @@ function SidebarMenu({ steps, currentStep }) {
         })}
       </ul>
       <div className="flex items-center justify-start pl-8 py-2">
-        <span className="text-gray-400 text-sm">&copy; {currentYear} Votre entreprise</span>
+        <span className="text-gray-400 text-sm">&copy; Altee {currentYear} Vous avez deja un compte? Connectez-vous</span>
       </div>
     </div>
   );
