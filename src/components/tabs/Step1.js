@@ -42,7 +42,7 @@ function Step1({ nextStep }) {
 
   return (
     <div className="mx-auto h-screen flex justify-between">
-      <div className="w-1/2 px-16 flex flex-col justify-between">
+      <div className="w-3/5 px-16 flex flex-col justify-between">
         <div className="mb-8 h-full">
           <h2 className="text-2xl font-bold mb-4 uppercase">Avant de créer un compte, quelques petites précisions sur Altee</h2>
           <FeatureList features={productFeatures} />
@@ -55,7 +55,7 @@ function Step1({ nextStep }) {
           <ButtonConnexion />
         </form>
       </div>
-      <div className="w-1/2 pr-16 h-full flex items-center justify-center">
+      <div className="w-2/5 pr-16 h-full flex items-center justify-center">
         <img src={image} alt="description" className="w-full h-full object-cover" />
       </div>
     </div>
