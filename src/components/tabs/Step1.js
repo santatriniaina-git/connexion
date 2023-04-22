@@ -56,7 +56,7 @@ function Step1({ nextStep }) {
         </form>
       </div>
       <div className="w-2/5 pr-16 h-full flex items-center justify-center">
-        <img src={image} alt="description" className="w-full h-full object-cover" />
+        <img src={image} alt="description" className="w-full h-[50rem] object-cover" />
       </div>
     </div>
   );
