@@ -23,9 +23,9 @@ function FeatureList({ features }) {
     <ul className="list-disc">
       {features.map((item, index) => (
         <li className="mb-2 py-2 pl-4 pr-4 rounded-md bg-gray-300 flex items-center" key={index}>
-          <svg viewBox="0 0 20 20" class="w-5 h-5 mr-2">
-            <circle cx="10" cy="10" r="9" fill="none" stroke="black" stroke-width="2" />
-            <path d="M6 10l3 3 6-6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <svg viewBox="0 0 20 20" className="w-5 h-5 mr-2">
+            <circle cx="10" cy="10" r="9" fill="none" stroke="black" strokeWidth="2" />
+            <path d="M6 10l3 3 6-6" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           {item}
         </li>
@@ -42,12 +42,12 @@ function Step1({ nextStep }) {
 
   return (
     <div className="mx-auto h-screen flex justify-between">
-      <div className="w-1/2 px-8 flex flex-col justify-center">
-        <div className="mb-8">
+      <div className="w-1/2 px-8 flex flex-col justify-between">
+        <div className="mb-8 h-full">
           <h2 className="text-2xl font-bold mb-4 uppercase">Avant de créer un compte, quelques petites précisions sur Altee</h2>
           <FeatureList features={productFeatures} />
         </div>
-        <div className="mb-8">
+        <div className="mb-8 h-full">
           <h2 className="text-2xl font-bold mb-4 uppercase">Nous nous distinguons principalement par la qualité du produit</h2>
           <FeatureList features={qualityFeatures} />
         </div>
