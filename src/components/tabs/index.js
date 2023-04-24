@@ -24,7 +24,7 @@ function Form() {
   const renderStep = () => {
     const StepComponent = steps[currentStep - 1].component;
     return (
-      <div className="relative">
+      <div>
         <div className="absolute top-0 right-0 w-[82.5rem] h-16 flex items-center justify-end">
           <h1>HEADER</h1>
         </div>
@@ -43,7 +43,7 @@ function Form() {
       <div className="w-[37.5rem] bg-[#F9F9F9] h-screen">
         <SidebarMenu steps={steps} currentStep={currentStep} />
       </div>
-      <div className="w-[82.5rem] py-8 flex items-center justify-center bg-[#fff]">
+      <div className="w-[82.5rem] py-8 flex items-center justify-center bg-[#fff] relative">
         {renderStep()}
       </div>
     </div>
