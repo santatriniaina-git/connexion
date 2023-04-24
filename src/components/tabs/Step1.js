@@ -3,19 +3,20 @@ import ButtonConnexion from '../ButtonConnexion';
 import image from '../../assets/CoverLogin3 1.svg';
 
 const productFeatures = [
-  'Nous proposons une large gamme de produits pour répondre à tous vos besoins.',
-  'Nos produits sont fabriqués avec des matériaux de qualité supérieure.',
-  'Nous nous engageons à fournir un service client exceptionnel à tous nos clients.',
-  'Nous sommes fiers d\'offrir des prix compétitifs sur tous nos produits.',
-  'Notre équipe expérimentée est là pour vous aider à chaque étape du processus.'
+  "Avant de créer votre compte, quelques petites précisions",
+  "Il vous faudra moins de 60 secondes pour créer votre compte",
+  "Votre compte est immédiatement utilisable de façon autonome grâce à nos formations interactives inclues",
+  "Vous profitez d'un essai gratuit de 30 jours sans limite d'utilisation",
+  "Aucune carte de crédit est nécessaire",
+  "Nos experts sont disponibles pour vous aider à tout moment dans l’espace messagerie/formation en bas à droite."
 ];
 
 const qualityFeatures = [
-  'Nous effectuons des tests rigoureux sur tous nos produits pour garantir leur qualité.',
-  'Nous utilisons des matériaux de qualité supérieure pour fabriquer tous nos produits.',
-  'Nous sommes fiers d\'offrir une garantie de qualité sur tous nos produits.',
-  'Nous nous engageons à fournir des produits qui répondent aux normes les plus élevées de qualité.',
-  'Nous sommes constamment à la recherche de moyens d\'améliorer la qualité de nos produits.'
+  "Altee n’a pas de durée minimale d’engagement",
+  "L’ensemble des fonctionnalitées sont toujours disponibles pour vous aider à gagner du temps",
+  "Vous restez propriétaire de vos données donc les informations saisies sont exportables à tout moment",
+  "La tarification est 100% transparente et sans surprises (voir ici)",
+  "Vos besoins sont une priorité. N’hésitez pas à nous demander des ajouts" 
 ];
 
 function FeatureList({ features }) {
@@ -58,7 +59,7 @@ function Step1({ nextStep }) {
 
   return (
     <div className="mx-auto h-screen flex justify-between">
-      <div className="w-3/5 px-16 flex flex-col justify-between">
+      <div className="w-1/2 px-16 flex flex-col justify-between">
         <div className="mb-8 h-full">
           <h2 className="font-bebas font-bold text-2xl text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer un compte, quelques petites précisions sur Altee</h2>
           <FeatureList features={productFeatures} />
@@ -71,7 +72,7 @@ function Step1({ nextStep }) {
           <ButtonConnexion />
         </form>
       </div>
-      <div className="w-2/5 pr-16 h-full flex items-center justify-center">
+      <div className="w-1/2 pr-16 h-full flex items-center justify-center">
         <img src={image} alt="description" className="w-full h-full object-cover" />
       </div>
     </div>
