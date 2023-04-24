@@ -23,10 +23,11 @@ function FeatureList({ features }) {
     <ul className="list-disc">
       {features.map((item, index) => (
         <li className="mb-2 py-5 pl-4 pr-4 rounded-md bg-gray-300 flex items-center" key={index}>
-          <svg viewBox="0 0 20 20" className="w-5 h-5 mr-2">
-            <circle cx="10" cy="10" r="9" fill="none" stroke="black" strokeWidth="2" />
-            <path d="M6 10l3 3 6-6" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4287 6.49519L7.77273 12.6654L4.57128 9.17288L5.77753 8.06715L7.77273 10.2437L12.2225 5.38946L13.4287 6.49519Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9ZM9 1.63636C4.93318 1.63636 1.63636 4.93318 1.63636 9C1.63636 13.0668 4.93318 16.3636 9 16.3636C13.0668 16.3636 16.3636 13.0668 16.3636 9C16.3636 4.93318 13.0668 1.63636 9 1.63636Z" fill="black"/>
+</svg>
+
           {item}
         </li>
       ))}
