@@ -4,8 +4,9 @@ import ButtonConnexion from "../ButtonConnexion";
 function Step5() {
   return (
     <form>
-      <div>
-      <svg width="133px" height="133px" viewBox="0 0 133 133" version="1.1">
+      <div className="font-poppins font-normal   flex items-center justify-center flex-col h-screen">
+      <div className="">
+      <svg width="80px" height="80px" viewBox="0 0 133 133" version="1.1">
   <g id="check-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <circle id="filled-circle" fill="#73C7B7" cx="66.5" cy="66.5" r="54.5"></circle>
     <circle id="white-circle" fill="#FFFFFF" cx="66.5" cy="66.5" r="55.5"></circle>
@@ -14,7 +15,6 @@ function Step5() {
   </g>
 </svg>
       </div>
-      <div className="font-poppins font-normal   flex items-center justify-center flex-col h-screen">
         <div className="text-center text-base leading-[30px]">
           Merci d'avoir procédé à l'inscription de votre entreprise.
         </div>
