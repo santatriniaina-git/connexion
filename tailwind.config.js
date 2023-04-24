@@ -23,7 +23,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Poppins',...defaultTheme.fontFamily.sans],
+        'poppins': ['Poppins',...defaultTheme.fontFamily.sans],
+        'bebas': ['Bebas Neue', 'sans-serif'],
     },
       boxShadow: {
         
