@@ -5,8 +5,8 @@ function Step5() {
   return (
     <form>
       <div className="font-poppins font-normal flex items-center justify-center flex-col h-screen">
-        <div className="svgStepConfirmation">
-          <svg width="80px" height="80px" viewBox="0 0 133 133" version="1.1">
+        <div>
+          <svg className="svgStepConfirmation" width="80px" height="80px" viewBox="0 0 133 133" version="1.1">
             <g
               id="check-group"
               stroke="none"
