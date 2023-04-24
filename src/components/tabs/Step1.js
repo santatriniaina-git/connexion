@@ -59,20 +59,20 @@ function Step1({ nextStep }) {
 
   return (
     <div className="mx-auto h-screen flex justify-between">
-      <div className="w-1/2 px-16 flex flex-col justify-between">
+      <div className="w-3/5 px-16 flex flex-col justify-between">
         <div className="mb-8 h-full">
-          <h2 className="font-bebas font-bold text-2xl text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer un compte, quelques petites précisions</h2>
+          <h2 className="font-bebas font-bold text-2xl text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte,quelques petites précisions</h2>
           <FeatureList features={productFeatures} />
         </div>
         <div className="mb-8 h-full">
-          <h2 className="font-bebas font-bold text-2xl text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Nous nous distinguons principalement par la qualité du produit</h2>
+          <h2 className="font-bebas font-bold text-2xl text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement,nous laissons la qualité de l’app parler d’elle même</h2>
           <FeatureList features={qualityFeatures} />
         </div>
         <form onSubmit={handleSubmit}>
           <ButtonConnexion />
         </form>
       </div>
-      <div className="w-1/2 pr-16 h-full flex items-center justify-center">
+      <div className="w-2/5 pr-16 h-full flex items-center justify-center">
         <img src={image} alt="description" className="w-full h-full object-cover" />
       </div>
     </div>
