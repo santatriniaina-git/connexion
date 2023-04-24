@@ -13,7 +13,7 @@ function SidebarMenu({ steps, currentStep }) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-1/4 flex flex-col justify-between z-0">
+    <div className="fixed inset-0 bg-[#F9F9F9] h-screen w-[37.5rem] flex flex-col justify-between z-0">
       <div className="flex items-center justify-start pl-8 py-8">
         <img src={logo} alt="Logo Altee" className="h-12 w-12" />
       </div>
