@@ -27,8 +27,10 @@ function FeatureList({ features }) {
           className="mb-2 py-[1.063rem] pl-4 pr-4 rounded-md bg-gray-100 flex items-center"
           key={index}
         >
+          <p className="mr-3">
           <svg
-            className="w-4 h-4 mr-3"
+            width="18" 
+            height="18"
             viewBox="0 0 18 18"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +46,7 @@ function FeatureList({ features }) {
               fill="black"
             />
           </svg>
+          </p>
           <p className="text-base font-poppins font-normal text-gray-600">{item}</p>
         </li>
       ))}
