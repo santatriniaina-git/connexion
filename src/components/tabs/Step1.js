@@ -43,7 +43,7 @@ function FeatureList({ features }) {
               fill="black"
             />
           </svg>
-          <p className="text-base font-normal text-gray-600">{item}</p>
+          <p className="text-base font-poppins font-normal text-gray-600">{item}</p>
         </li>
       ))}
     </ul>
