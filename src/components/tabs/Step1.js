@@ -44,11 +44,11 @@ function Step1({ nextStep }) {
     <div className="mx-auto h-screen flex justify-between">
       <div className="w-3/5 px-16 flex flex-col justify-between">
         <div className="mb-8 h-full">
-          <h2 className="text-2xl font-bold mb-4 uppercase">Avant de créer un compte, quelques petites précisions sur Altee</h2>
+          <h2 className="font-bebas font-bold text-25 leading-25 tracking-tighter text-left mb-4 uppercase">Avant de créer un compte, quelques petites précisions sur Altee</h2>
           <FeatureList features={productFeatures} />
         </div>
         <div className="mb-8 h-full">
-          <h2 className="text-2xl font-bold mb-4 uppercase">Nous nous distinguons principalement par la qualité du produit</h2>
+          <h2 className="font-bebas font-bold text-25 leading-25 tracking-tighter text-left mb-4 uppercase">Nous nous distinguons principalement par la qualité du produit</h2>
           <FeatureList features={qualityFeatures} />
         </div>
         <form onSubmit={handleSubmit}>
