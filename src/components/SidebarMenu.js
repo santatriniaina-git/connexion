@@ -3,11 +3,7 @@ import logo from '../assets/logoAltee.svg';
 
 function SidebarMenu({ steps, currentStep }) {
   const getStepIcon = (isSelectedStep, isPastStep) => {
-    if (isSelectedStep || isPastStep) {
-      return <span className="font-bold">X</span>;
-    } else {
-      return <span className="font-bold">Y</span>;
-    }
+    return <span className="font-bold">{isSelectedStep || isPastStep ? 'X' : 'Y'}</span>;
   };
 
   const currentYear = new Date().getFullYear();
