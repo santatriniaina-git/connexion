@@ -5,8 +5,6 @@ import StepCreateFirstAdmin from "./Step3";
 import StepYourNeeds from "./Step4";
 import StepConfirmation from "./Step5";
 import SidebarMenu from "../SidebarMenu";
-import Header from "../Header";
-import Footer from "../Footer";
 
 function Form() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -26,23 +24,28 @@ function Form() {
   const renderStep = () => {
     const StepComponent = steps[currentStep - 1].component;
     return (
-      <div className="py-24">
-        <StepComponent nextStep={nextStep} />
+      <div className="relative">
+        <div className="absolute top-0 right-0 w-3/4 h-16 flex items-center justify-end">
+          <h1>HEADER</h1>
+        </div>
+        <div className="py-24">
+          <StepComponent nextStep={nextStep} />
+        </div>
+        <div className="absolute bottom-0 right-0 w-3/4 h-16 flex items-center justify-end">
+          <h1>FOOTER</h1>
+        </div>
       </div>
     );
-    
   };
 
   return (
-    <div className="relative">
-      <Header />
-      <div className="flex flex-row mx-auto">
-        <div className="w-1/4 bg-[#F9F9F9] h-screen">
-          <SidebarMenu steps={steps} currentStep={currentStep} />
-        </div>
-        <div className="w-3/4 py-8 flex items-center justify-center bg-[#fff]">{renderStep()}</div>
+    <div className="flex flex-row mx-auto">
+      <div className="w-1/4 bg-[#F9F9F9] h-screen">
+        <SidebarMenu steps={steps} currentStep={currentStep} />
       </div>
-      <Footer />
+      <div className="w-3/4 py-8 flex items-center justify-center bg-[#fff]">
+        {renderStep()}
+      </div>
     </div>
   );
 }
