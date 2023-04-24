@@ -23,7 +23,7 @@ function FeatureList({ features }) {
     <ul className="list-disc">
       {features.map((item, index) => (
         <li
-          className="mb-2 py-5 pl-4 pr-4 rounded-md bg-gray-300 flex items-center"
+          className="mb-2 py-5 pl-4 pr-4 rounded-md bg-gray-100 flex items-center"
           key={index}
         >
           <svg
@@ -43,8 +43,7 @@ function FeatureList({ features }) {
               fill="black"
             />
           </svg>
-
-          {item}
+          <p className="text-base font-medium text-gray-600">{item}</p>
         </li>
       ))}
     </ul>
