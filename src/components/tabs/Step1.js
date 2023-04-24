@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonConnexion from '../ButtonConnexion';
-import image from '../../assets/images.PNG';
+import image from '../../assets/CoverLogin3 1.svg';
 
 const productFeatures = [
   'Nous proposons une large gamme de produits pour répondre à tous vos besoins.',
