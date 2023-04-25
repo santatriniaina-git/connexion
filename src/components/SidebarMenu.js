@@ -3,7 +3,18 @@ import logo from '../assets/logoAltee.svg';
 
 function SidebarMenu({ steps, currentStep }) {
   const getStepIcon = (isSelectedStep, isPastStep) => {
-    return <span className="font-bold">{isSelectedStep || isPastStep ? 'X' : 'Y'}</span>;
+    return (
+      <span className="font-bold">
+        {isSelectedStep || isPastStep ? (
+          'X'
+        ) : (
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14" stroke="#B0BEC5" stroke-width="2"/>
+            <circle cx="15" cy="15" r="6.66667" fill="#B0BEC5"/>
+          </svg>
+        )}
+      </span>
+    );
   };
 
   const currentYear = new Date().getFullYear();
