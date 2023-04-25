@@ -71,7 +71,7 @@ function Step1({ nextStep }) {
           <FeatureList features={qualityFeatures} />
         </div>
         <form onSubmit={handleSubmit}>
-          <ButtonConnexion width="w-[24.125rem]" />
+          <ButtonConnexion width="w-full lg:w-[24.125rem]" />
         </form>
       </div>
       <div className="w-full lg:w-1/2 pr-4 lg:pr-16 h-64 lg:h-full flex items-center justify-center">
