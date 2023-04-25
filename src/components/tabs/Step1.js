@@ -3,11 +3,11 @@ import ButtonConnexion from '../ButtonConnexion';
 import image from '../../assets/CoverLogin3 1.svg';
 
 const productFeatures = [
-  "Avant de créer votre compte, quelques petites précisions",
   "Il vous faudra moins de 60 secondes pour créer votre compte",
   "Votre compte est immédiatement utilisable de façon autonome grâce à nos formations interactives inclues",
   "Vous profitez d'un essai gratuit de 30 jours sans limite d'utilisation",
-  "Aucune carte de crédit est nécessaire"
+  "Aucune carte de crédit est nécessaire",
+  "Nos experts sont disponibles pour vous aider à tout moment dans l’espace messagerie/formation en bas à droite."
 ];
 
 const qualityFeatures = [
