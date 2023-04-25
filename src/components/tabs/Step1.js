@@ -60,24 +60,25 @@ function Step1({ nextStep }) {
   };
 
   return (
-    <div className="mx-auto flex justify-between">
-      <div className="w-1/2 px-14 flex flex-col justify-between">
-        <div className="mb-8 h-full">
-          <h2 className="font-bebas font-normal text-[25px] leading-[25px] text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
-          <FeatureList features={productFeatures} />
-        </div>
-        <div className="mb-8 h-full">
-          <h2 className="font-bebas font-normal text-[25px] leading-[25px] text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement, nous laissons la qualité de l’app parler d’elle même</h2>
-          <FeatureList features={qualityFeatures} />
-        </div>
-        <form onSubmit={handleSubmit}>
-          <ButtonConnexion width="w-[24.125rem]"/>
-        </form>
-      </div>
-      <div className="w-1/2 pr-16 h-full flex items-center justify-center">
-        <img src={image} alt="description" className="w-full h-full object-cover" />
-      </div>
+    <div className="mx-auto flex flex-col lg:flex-row justify-between">
+  <div className="w-full lg:w-1/2 px-4 lg:px-14 flex flex-col justify-between">
+    <div className="mb-8 h-full">
+      <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
+      <FeatureList features={productFeatures} />
     </div>
+    <div className="mb-8 h-full">
+      <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement, nous laissons la qualité de l’app parler d’elle même</h2>
+      <FeatureList features={qualityFeatures} />
+    </div>
+    <form onSubmit={handleSubmit}>
+      <ButtonConnexion width="w-[24.125rem]"/>
+    </form>
+  </div>
+  <div className="w-full lg:w-1/2 pr-4 lg:pr-16 h-64 lg:h-full flex items-center justify-center">
+    <img src={image} alt="description" className="w-full h-full object-cover" />
+  </div>
+</div>
+
   );
 }
 
