@@ -75,8 +75,8 @@ function Step1({ nextStep }) {
         </form>
       </div>
       <div className="w-full lg:w-1/2 pr-4 lg:pr-16 h-64 lg:h-full flex items-center justify-center">
-  <img src={image} alt="description" className="w-full h-full object-cover hidden lg:block" />
-</div>
+        <img src={image} alt="description" className="w-full h-full object-cover hidden lg:block" />
+      </div>
 
     </div>
 
