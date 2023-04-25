@@ -9,7 +9,12 @@ function SidebarMenu({ steps, currentStep }) {
     return (
       <span className="font-bold">
         {isSelectedStep || isPastStep ? (
-          'X'
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="14" stroke="#2C2C31" stroke-width="2"/>
+          <svg x="7.5" y="9" width="15" height="12" viewBox="0 0 15 12">
+            <path d="M13.8333 1.75L5.12496 10.4583L1.16663 6.5" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </svg>        
         ) : (
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="15" cy="15" r="14" stroke="#B0BEC5" strokeWidth="2"/>
