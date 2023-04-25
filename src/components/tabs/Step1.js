@@ -24,7 +24,7 @@ function FeatureList({ features }) {
     <ul className="list-disc">
       {features.map((item, index) => (
         <li
-          className="flex flex-row items-center mb-[7px] p-5 gap-x-4 rounded-md bg-gray-100"
+          className="flex flex-row items-center mb-[0.438rem] p-5 gap-x-4 rounded-md bg-gray-100"
           key={index}
         >
           <p className="mr-3">
