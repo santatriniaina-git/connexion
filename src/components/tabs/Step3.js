@@ -8,7 +8,7 @@ function Step3({ nextStep }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-x-20 gap-y-11">
+    <form onSubmit={handleSubmit} className="grid grid-rows-2 gap-x-20 gap-y-11 lg:grid-cols-2">
       <div>
         <label htmlFor="field1">Prénom *</label>
         <input
