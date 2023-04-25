@@ -4,7 +4,12 @@ import logo from '../assets/logoAltee.svg';
 function SidebarMenu({ steps, currentStep }) {
   const getStepIcon = (isSelectedStep, isPastStep, isFirstStep) => {
     if (isFirstStep) {
-      return <span className="font-bold">R</span>;
+      return (<span className="font-bold"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="14" stroke="#2A353D" stroke-width="2.2"/>
+      <path d="M13.1992 11.8C13.1992 10.2536 14.4528 9 15.9992 9C17.5456 9 18.7992 10.2536 18.7992 11.8C18.7992 12.3574 18.6363 12.8768 18.3556 13.3131C17.5188 14.6135 15.9992 15.8536 15.9992 17.4V18.1" stroke="#2A353D" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M15.988 23H16.0006" stroke="#2A353D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </span>);
     }
     return (
       <span className="font-bold">
