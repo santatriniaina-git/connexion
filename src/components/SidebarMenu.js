@@ -2,14 +2,17 @@ import React from "react";
 import logo from '../assets/logoAltee.svg';
 
 function SidebarMenu({ steps, currentStep }) {
-  const getStepIcon = (isSelectedStep, isPastStep) => {
+  const getStepIcon = (isSelectedStep, isPastStep, isFirstStep) => {
+    if (isFirstStep) {
+      return <span className="font-bold">R</span>;
+    }
     return (
       <span className="font-bold">
         {isSelectedStep || isPastStep ? (
           'X'
         ) : (
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="15" cy="15" r="14" stroke="#B0BEC5" stroke-width="2"/>
+            <circle cx="15" cy="15" r="14" stroke="#B0BEC5" strokeWidth="2"/>
             <circle cx="15" cy="15" r="6.66667" fill="#B0BEC5"/>
           </svg>
         )}
@@ -29,7 +32,8 @@ function SidebarMenu({ steps, currentStep }) {
           const isSelectedStep = index + 1 === currentStep;
           const isPastStep = index + 1 < currentStep;
           const isSelectedOrPastClass = isSelectedStep || isPastStep ? "text-black" : "text-[#B0BEC5]";
-          const stepIcon = steps[index - 1]?.name && index !== 0 ? getStepIcon(isSelectedStep, isPastStep) : getStepIcon(true, false);
+          const isFirstStep = index === 0;
+          const stepIcon = steps[index - 1]?.name && !isFirstStep ? getStepIcon(isSelectedStep, isPastStep, isFirstStep) : getStepIcon(true, false, isFirstStep);
           return (
             <li
               key={step.name}
