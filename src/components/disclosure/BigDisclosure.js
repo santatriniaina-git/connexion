@@ -22,18 +22,18 @@ const BigDisclosure = ({
   withArrowDown
 }) => {
   return (
-    <div className={classParent + " arh-w-full"} ref={innerRef}>
+    <div className={classParent + " w-full"} ref={innerRef}>
       <Disclosure defaultOpen={defaultOpen}>
         {({ open }) => {
           return (
             <>
               <Disclosure.Button
                 as="div"
-                className="arh-flex arh-justify-between arh-items-center arh-w-full arh-bg-white arh-border-0 arh-rounded arh-p-8 arh-pr-14 arh-text-left arh-cursor-pointer"
+                className="flex justify-between items-center w-full bg-[#F9FAFB] border-0 rounded p-8 pr-14 text-left cursor-pointer"
               >
-                <h6 className="arh-flex arh-items-center arh-text-darkColor arh-font-poppins arh-font-bold arh-text-[0.938rem] arh-m-0">
+                <h6 className="flex items-center text-darkColor font-poppins font-bold text-[0.938rem] m-0">
                   {titleIcon}
-                  <span className={spaceTitle ? classSpaceTitle : "arh-ml-12"}>
+                  <span className={spaceTitle ? classSpaceTitle : "ml-12"}>
                     {title}
                   </span>
                   {elementTitle ? childrenTitle : ""}
@@ -58,8 +58,8 @@ const BigDisclosure = ({
                   alt="Arrow icon"
                   className={`${
                     open
-                      ? "arh-transition arh-ease-in arh-duration-[100ms] arh-transform arh-rotate-custom-90"
-                      : "arh-transition arh-ease-in arh-duration-[100ms] arh-transform arh-rotate-custom-0"
+                      ? "transition ease-in duration-[100ms] transform rotate-custom-90"
+                      : "transition ease-in duration-[100ms] transform rotate-custom-0"
                   }`}
                 />
                 )}
