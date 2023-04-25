@@ -24,7 +24,7 @@ function FeatureList({ features }) {
     <ul className="list-disc">
       {features.map((item, index) => (
         <li
-          className="mb-2 py-[1.063rem] pl-4 pr-4 rounded-md bg-gray-100 flex items-center"
+          className="mb-2 py-[1.063rem] pl-5 pr-5 rounded-md bg-gray-100 flex items-center"
           key={index}
         >
           <p className="mr-3">
