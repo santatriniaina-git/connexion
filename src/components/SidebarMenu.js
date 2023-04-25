@@ -22,7 +22,7 @@ function SidebarMenu({ steps, currentStep }) {
           return (
             <li
               key={step.name}
-              className={`w-full flex space-x-4 items-center mb-4 py-2 rounded-lg font-medium cursor-pointer transition duration-200
+              className={`font-bebas text-[28px] font-normal leading-[34px] tracking-normal text-left w-full flex space-x-4 items-center mb-4 py-2 rounded-lg cursor-pointer transition duration-200
                 ${isSelectedOrPastClass} ${step.name === "" ? "hidden" : ""} uppercase pl-14
               `}
             >
