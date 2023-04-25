@@ -7,8 +7,7 @@ const productFeatures = [
   "Il vous faudra moins de 60 secondes pour créer votre compte",
   "Votre compte est immédiatement utilisable de façon autonome grâce à nos formations interactives inclues",
   "Vous profitez d'un essai gratuit de 30 jours sans limite d'utilisation",
-  "Aucune carte de crédit est nécessaire",
-  "Nos experts sont disponibles pour vous aider à tout moment dans l’espace messagerie/formation en bas à droite."
+  "Aucune carte de crédit est nécessaire"
 ];
 
 const qualityFeatures = [
