@@ -40,10 +40,10 @@ function Form() {
 
   return (
     <div className="flex flex-row mx-auto">
-      <div className="w-[37.5rem] bg-[#F9F9F9] h-screen">
+      <div className="hidden lg:block w-[37.5rem] bg-[#F9F9F9] h-screen">
         <SidebarMenu steps={steps} currentStep={currentStep} />
       </div>
-      <div className="w-[82.5rem] py-8 flex items-center justify-center bg-[#fff] relative">
+      <div className="w-full lg:w-[82.5rem] py-8 flex items-center justify-center bg-[#fff] relative">
         {renderStep()}
       </div>
     </div>
