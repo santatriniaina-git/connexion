@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../assets/logoAltee.svg';
+import logo from '../assets/Group 3539.svg';
 
 function SidebarMenu({ steps, currentStep }) {
   const getStepIcon = (isSelectedStep, isPastStep, isFirstStep) => {
