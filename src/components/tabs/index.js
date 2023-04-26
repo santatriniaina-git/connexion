@@ -14,11 +14,11 @@ function Form() {
   };
   
   const steps = [
-    { name: "Notre fonctionnement", component: StepConfirmation },
+    { name: "Notre fonctionnement", component:  StepYourNeeds},
     { name: "Création du profile d'entreprise", component: StepCreateCompanyProfile },
     { name: "Création du premier administrateur", component: StepCreateFirstAdmin },
-    { name: "Vos besoins", component: StepYourNeeds },
-    { name: "", component:  StepOurProcess},
+    { name: "Vos besoins", component: StepOurProcess },
+    { name: "", component: StepConfirmation },
   ];
 
   const renderStep = () => {
