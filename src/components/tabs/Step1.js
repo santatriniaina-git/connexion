@@ -74,7 +74,7 @@ function Step1({ nextStep }) {
           <ButtonConnexion width="w-full lg:w-[24.125rem]" />
         </form>
       </div>
-      <div className="w-full lg:w-1/2 pr-4 lg:pr-6 h-64 lg:h-full flex items-center justify-center">
+      <div className="w-full lg:w-1/2 h-64 lg:h-full flex items-center justify-center">
         <img src={image} alt="description" className="w-[539px] h-[772px] object-cover hidden lg:block" />
       </div>
     </div>
