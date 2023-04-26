@@ -14,9 +14,29 @@ function Step4({ nextStep }) {
       <div className="flex flex-col space-y-6 ">
         <BigDisclosure
           title={"Gestion des ressources humaines"}
-          classParent=" bg-white my-2 px-2 py-2 h-26"
-        >
-          border list
+          classParent=" bg-white my-2 px-2 py-2 h-auto">
+          <div className="grid grid-cols-3 gap-4">
+            <div>
+              <p>Étiquette 1</p>
+              <p>Étiquette 2</p>
+              <p>Étiquette 3</p>
+              <p>Étiquette 4</p>
+              <p>Étiquette 5</p>
+            </div>
+            <div>
+              <p>Étiquette 6</p>
+              <p>Étiquette 7</p>
+              <p>Étiquette 8</p>
+              <p>Étiquette 9</p>
+              <p>Étiquette 10</p>
+            </div>
+            <div>
+              <p>Étiquette 11</p>
+              <p>Étiquette 12</p>
+              <p>Étiquette 13</p>
+              <p>Étiquette 14</p>
+            </div>
+          </div>
         </BigDisclosure>
         <BigDisclosure
           title={"Recrutement et site carriere"}
