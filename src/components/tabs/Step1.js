@@ -15,7 +15,7 @@ const qualityFeatures = [
   "L’ensemble des fonctionnalitées sont toujours disponibles pour vous aider à gagner du temps",
   "Vous restez propriétaire de vos données donc les informations saisies sont exportables à tout moment",
   "La tarification est 100% transparente et sans surprises (voir ici)",
-  "Vos besoins sont une priorité. N’hésitez pas à nous demander des ajouts" 
+  "Vos besoins sont une priorité. N’hésitez pas à nous demander des ajouts"
 ];
 
 function FeatureList({ features }) {
@@ -28,7 +28,7 @@ function FeatureList({ features }) {
         >
           <p className="mr-3">
             <svg
-              width="18" 
+              width="18"
               height="18"
               viewBox="0 0 18 18"
               fill="none"
@@ -63,14 +63,12 @@ function Step1({ nextStep }) {
     <div className="mx-auto flex flex-col lg:flex-row justify-between">
       <div className="w-full lg:w-1/2 px-4 lg:px-6 flex flex-col justify-between">
         <div>
-          <div>
-            <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
-            <FeatureList features={productFeatures} />
-          </div>
-          <div>
-            <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement, nous laissons la qualité de l’app parler d’elle même</h2>
-            <FeatureList features={qualityFeatures} />
-          </div>
+          <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
+          <FeatureList features={productFeatures} />
+        </div>
+        <div>
+          <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement, nous laissons la qualité de l’app parler d’elle même</h2>
+          <FeatureList features={qualityFeatures} />
         </div>
         <form onSubmit={handleSubmit}>
           <ButtonConnexion width="w-full lg:w-[24.125rem]" />
