@@ -2,6 +2,18 @@ import React from "react";
 import BigDisclosure from "../disclosure/BigDisclosure";
 import ButtonConnexion from "../ButtonConnexion";
 
+function NumberedLabels() {
+  const labels = ["Étiquette 1", "Étiquette 2", "Étiquette 3", "Étiquette 4", "Étiquette 5", "Étiquette 6", "Étiquette 7", "Étiquette 8", "Étiquette 9", "Étiquette 10", "Étiquette 11", "Étiquette 12", "Étiquette 13", "Étiquette 14"];
+
+  return (
+    <div className="grid grid-cols-3 gap-4">
+      {labels.map((label, index) => (
+        <p key={index}>{label}</p>
+      ))}
+    </div>
+  );
+}
+
 function Step4({ nextStep }) {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,28 +27,7 @@ function Step4({ nextStep }) {
         <BigDisclosure
           title={"Gestion des ressources humaines"}
           classParent=" bg-white my-2 px-2 py-2 h-auto">
-          <div className="grid grid-cols-3 gap-4">
-            <div>
-              <p>Étiquette 1</p>
-              <p>Étiquette 2</p>
-              <p>Étiquette 3</p>
-              <p>Étiquette 4</p>
-              <p>Étiquette 5</p>
-            </div>
-            <div>
-              <p>Étiquette 6</p>
-              <p>Étiquette 7</p>
-              <p>Étiquette 8</p>
-              <p>Étiquette 9</p>
-              <p>Étiquette 10</p>
-            </div>
-            <div>
-              <p>Étiquette 11</p>
-              <p>Étiquette 12</p>
-              <p>Étiquette 13</p>
-              <p>Étiquette 14</p>
-            </div>
-          </div>
+          <NumberedLabels />
         </BigDisclosure>
         <BigDisclosure
           title={"Recrutement et site carriere"}
