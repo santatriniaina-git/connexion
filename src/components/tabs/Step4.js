@@ -10,7 +10,7 @@ function Step4({ nextStep }) {
 
   return (
     <form onSubmit={handleSubmit} className="grid grid-row-2 gap-x-20 gap-y-11 items-center">
-      <div className="flex text-[3.75rem] font-bebas text-[#101828] font-normal items-center " >VOS BESOINS</div>
+      <div className="flex text-[3.75rem] font-bebas font-normal items-center " >VOS BESOINS</div>
       <div className="flex flex-col space-y-6 ">
         <BigDisclosure
           title={"Gestion des ressources humaines"}
