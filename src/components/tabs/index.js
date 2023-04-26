@@ -28,7 +28,7 @@ function Form() {
         <div className="absolute top-0 right-0 w-[82.5rem] h-16 flex items-center justify-end">
           <h1>HEADER</h1>
         </div>
-        <div className="py-24">
+        <div className="py-[4.5rem]">
           <StepComponent nextStep={nextStep} />
         </div>
         <div className="absolute bottom-0 right-0 w-[82.5rem] h-16 flex items-center justify-end">

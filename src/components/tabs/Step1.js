@@ -23,7 +23,7 @@ function FeatureList({ features }) {
     <ul className="list-disc">
       {features.map((item, index) => (
         <li
-          className="flex flex-row items-center mb-[0.438rem] p-5 gap-x-4 rounded-md bg-gray-100"
+          className="flex flex-row items-center mb-[0.438rem] px-5 gap-x-4 rounded-md bg-gray-100"
           key={index}
         >
           <p className="mr-3">
@@ -62,11 +62,11 @@ function Step1({ nextStep }) {
   return (
     <div className="mx-auto flex flex-col lg:flex-row justify-between">
       <div className="w-full lg:w-1/2 px-4 lg:px-6 flex flex-col justify-between">
-        <div className="mb-8 h-full">
+        <div>
           <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
           <FeatureList features={productFeatures} />
         </div>
-        <div className="mb-8 h-full">
+        <div>
           <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement, nous laissons la qualité de l’app parler d’elle même</h2>
           <FeatureList features={qualityFeatures} />
         </div>
