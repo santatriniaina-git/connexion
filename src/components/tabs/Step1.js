@@ -61,7 +61,7 @@ function Step1({ nextStep }) {
 
   return (
     <div className="mx-auto flex flex-col lg:flex-row justify-between">
-      <div className="w-full lg:w-1/2 px-4 lg:px-6 flex flex-col space-y-[3.75rem]">
+      <div className="w-full lg:w-1/2 px-4 lg:pl-8 flex flex-col space-y-[3.75rem]">
         <div>
           <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
           <FeatureList features={productFeatures} />
