@@ -63,12 +63,14 @@ function Step1({ nextStep }) {
     <div className="mx-auto flex flex-col lg:flex-row justify-between">
       <div className="w-full lg:w-1/2 px-4 lg:px-6 flex flex-col justify-between">
         <div>
-          <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
-          <FeatureList features={productFeatures} />
-        </div>
-        <div>
-          <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement, nous laissons la qualité de l’app parler d’elle même</h2>
-          <FeatureList features={qualityFeatures} />
+          <div>
+            <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Avant de créer votre compte, quelques petites précisions</h2>
+            <FeatureList features={productFeatures} />
+          </div>
+          <div>
+            <h2 className="font-bebas font-normal text-2xl lg:text-3xl leading-tight text-gray-800 flex items-center tracking-tighter mb-4 uppercase">Aucun engagement, nous laissons la qualité de l’app parler d’elle même</h2>
+            <FeatureList features={qualityFeatures} />
+          </div>
         </div>
         <form onSubmit={handleSubmit}>
           <ButtonConnexion width="w-full lg:w-[24.125rem]" />
