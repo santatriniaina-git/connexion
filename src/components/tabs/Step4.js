@@ -3,7 +3,22 @@ import BigDisclosure from "../disclosure/BigDisclosure";
 import ButtonConnexion from "../ButtonConnexion";
 
 function NumberedLabels() {
-  const labels = ["Étiquette 1", "Étiquette 2", "Étiquette 3", "Étiquette 4", "Étiquette 5", "Étiquette 6", "Étiquette 7", "Étiquette 8", "Étiquette 9", "Étiquette 10", "Étiquette 11", "Étiquette 12", "Étiquette 13", "Étiquette 14"];
+  const labels = [
+    "Étiquette 1",
+    "Étiquette 2",
+    "Étiquette 3",
+    "Étiquette 4",
+    "Étiquette 5",
+    "Étiquette 6",
+    "Étiquette 7",
+    "Étiquette 8",
+    "Étiquette 9",
+    "Étiquette 10",
+    "Étiquette 11",
+    "Étiquette 12",
+    "Étiquette 13",
+    "Étiquette 14"
+  ];  
 
   return (
     <div className="grid grid-cols-3 gap-4">
