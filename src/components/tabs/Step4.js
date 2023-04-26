@@ -51,7 +51,7 @@ function Step4({ nextStep }) {
           <input
             type="text"
             placeholder="1&0%U4YW!nZs"
-            id="field1"            name="field1"
+            id="field1" name="field1"
             className="border border-gray-300 rounded-md p-2 w-full"
             required
           />
