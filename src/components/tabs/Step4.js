@@ -16,13 +16,18 @@ function Step4({ nextStep }) {
           title={"Gestion des ressources humaines"}
           classParent=" bg-white my-2 px-2 py-2 h-26"
         >
-          <div class="box-border flex flex-row items-center p-15 gap-10 w-[20rem] h-[3.375rem] bg-gray-100 border border-gray-500 rounded-md">
-            <p>
+          border list
+          {/* <div className="box-border flex flex-row items-center p-15 gap-10 w-[20rem] h-[3.375rem] bg-gray-100 border border-gray-500 rounded-md mt-3 relative">
+            <div className="flex items-center space-x-4 ">
+            <span>
               x
-            </p>
-          <p class="font-medium text-sm leading-6 text-primary flex-none order-0 flex-grow font-poppins">Espace personnel</p>
-            <p>y</p>
-          </div>
+            </span>
+          <span className="font-medium text-sm leading-6 text-primary flex-none order-0 flex-grow font-poppins">Espace personnel</span>
+            </div>
+          <span className="absolute right-0 top-1/2 transform -translate-y-1/2 mr-3">
+       y
+      </span>
+          </div> */}
 
         </BigDisclosure>
         <BigDisclosure
