@@ -3,20 +3,20 @@ import BigDisclosure from "../disclosure/BigDisclosure";
 import ButtonConnexion from "../ButtonConnexion";
 
 const labels = [
-  "Étiquette 1",
-  "Étiquette 2",
-  "Étiquette 3",
-  "Étiquette 4",
-  "Étiquette 5",
-  "Étiquette 6",
-  "Étiquette 7",
-  "Étiquette 8",
-  "Étiquette 9",
-  "Étiquette 10",
-  "Étiquette 11",
-  "Étiquette 12",
-  "Étiquette 13",
-  "Étiquette 14"
+  "Espace personnel",
+  "Dossiers employés",
+  "Suivi des heures et pointages",
+  "Communication interne",
+  "Statistiques et analytiques RH",
+  "Gestion des heures et des payes",
+  "Documentation",
+  "Remboursements",
+  "Gestions des compétences",
+  "Organigramme",
+  "Iventaire du matériel",
+  "Suivie de la performance",
+  "Flux des employés et intégration",
+  "Horaires de travail et vacances"
 ];
 
 function NumberedLabels() {
