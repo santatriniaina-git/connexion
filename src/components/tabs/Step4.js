@@ -23,7 +23,18 @@ function NumberedLabels() {
   return (
     <div className="grid grid-cols-3 gap-4">
       {labels.map((label, index) => (
-        <p key={index}>{label}</p>
+        <div key={index} className="box-border flex flex-row items-center p-15 gap-10 w-[20rem] h-[3.375rem] bg-gray-100 border border-gray-500 rounded-md mt-3 relative">
+            <div className="flex items-center space-x-4 ">
+            <span>
+              x
+            </span>
+          <span className="font-medium text-sm leading-6 text-primary flex-none order-0 flex-grow font-poppins">{label}</span>
+            </div>
+          <span className="absolute right-0 top-1/2 transform -translate-y-1/2 mr-3">
+       y
+      </span>
+          </div>
+
       ))}
     </div>
   );
